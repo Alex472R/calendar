@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 
+import MainPage from "./layots/MainPage/MainPage";
+import Header from "./components/Header/Header";
+
 function App() {
+
+  const [isLogin, setIsLogin] = useState(localStorage.getItem('token') ? true : false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <MainPage/>
     </div>
   );
 }

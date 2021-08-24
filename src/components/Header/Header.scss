@@ -1,0 +1,23 @@
+header {
+  height: 100px;
+  background-color: #282c34;
+  color: white;
+  nav {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    .up {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .down {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+}
+
+
+

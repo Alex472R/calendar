@@ -1,0 +1,13 @@
+.main {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  width: 100%;
+
+  div {
+    border: solid 1px gray;
+    max-width: 100px;
+    width: 100%;
+  }
+}
